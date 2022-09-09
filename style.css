@@ -1,0 +1,231 @@
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+ #map {
+    height: 100%;
+  }
+  
+  /* Optional: Makes the sample page fill the window. */
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .controls {
+    margin-top: 10px;
+    border: 1px solid transparent;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 32px;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  #origin-input,
+  #destination-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 200px;
+  }
+  
+  #origin-input:focus,
+  #destination-input:focus {
+    border-color: #4d90fe;
+  }
+  
+  #mode-selector {
+    color: #fff;
+    background-color: #4d90fe;
+    margin-left: 12px;
+    padding: 5px 11px 0px 11px;
+  }
+  
+  #mode-selector label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+  }
+.home_page{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.mainImage img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  filter: brightness(0.5);
+}
+.container{
+  width: 94%;
+  margin: auto;
+}
+.header_top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+.header_top .logo img{
+  width: 250px;
+  height: 102px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.header_top .main_links ul{
+  list-style: none;
+  display: flex;
+}
+.header_top .main_links ul li{
+  margin: 20px;
+}
+.header_top .main_links ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+.page_content{
+  margin-top: 150px;
+}
+.page_content .Welcome_text{
+  color: #fff;
+  font-size: 35px;
+  width: 70%;
+}
+.Welcome_details{
+  color: #fff;
+  font-weight: 500;
+  width: 70%;
+}
+.buttons{
+  display: flex;
+  margin-top: 90px;
+}
+.buttons .button1{
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: rgb(35, 133, 35);
+  width: 180px;
+  height: 44px;
+  border-radius: 6px;
+  margin: 0 18px;
+  cursor: pointer;
+}
+.buttons .button2{
+  border: none;
+  outline: none;
+  color: #fff;
+  width: 180px;
+  height: 44px;
+  border-radius: 6px;
+  background-color: #4d90fe;
+  cursor: pointer;  
+}
+.form{
+  position: absolute;
+  top: 63%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  width: 40%;
+}
+.form label{
+  display: block;
+}
+.form input, .form textarea{
+  width: 100%;
+  height: 25px;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 7px;
+}
+.form-group{
+  margin-bottom: 12px;
+}
+.form textarea{height: 60px;}
+.form input:focus, .form textarea:focus{
+  border: 1px solid #ccc;
+}
+.form button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border: none;
+  outline: none;
+  background-color: #4d90fe;
+  color: #fff;
+  padding: 10px 40px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.Form_Logo img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 196px;
+  /* padding-top: 39px; */
+  border-radius: 6px;
+  pointer-events: all;
+  position: absolute;
+  right: 50%;
+  top: 19%;
+  transform: translate(50%, -50%);
+  height: 65px;
+  object-fit: cover;
+}
+
+.fa-map-marker-alt,
+.fa-dot-circle {
+  color: #5bc0de;
+}
+
+/*Jumbotron*/
+.jumbotron {
+  background-color: transparent;
+  margin: 0;
+  padding: 10px;
+}
+
+.jumbotron h1 {
+  letter-spacing: 2.5px;
+  font-size: 3.5em;
+}
+
+.jumbotron h1,
+.jumbotron p {
+  text-align: center;
+}
+
+/*map*/
+#googleMap {
+  width: 80%;
+  height: 400px;
+  margin: 10px auto;
+}
+
+/*output box*/
+#output {
+  text-align: center;
+  font-size: 2em;
+  margin: 20px auto;
+}
+
+#mode {
+  color: black;
+}
