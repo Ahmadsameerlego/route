@@ -12,6 +12,9 @@
 <body>
   
 
+    <div class="mapLogo">
+      <img src="imgs/logo.png" alt="Logo">
+    </div>
 
     <div id="inputs">
       
@@ -19,12 +22,12 @@
   
         <div class="inputs">
           <div>
-            <label for="">start point :</label>
+            <label for="">Start Point :</label>
             <input id="start" type="text" value="Cleveland, OH">  
           </div>    
 
           <div>
-            <label for=""> stops points : </label>
+            <label for=""> Stop Points : </label>
 
             <input class="waypoints" value="Ann Arbor, MI" id="waypoints1" />
             <br>
@@ -36,15 +39,15 @@
           </div>
 
           <div>
-            <label for="">end point</label>
+            <label for="">End Point</label>
   
             <input id="end" type="text" value="Des Moines, IA">
           </div>
 
           <div>
-            <label for=""> choose delivery mode </label>
+            <label for=""> Choose Delivery Mode </label>
               <select id="mode">
-                <option value="DRIVING">Driving</option>
+                <option value="DRIVING"> Driving</option>
                 <option value="WALKING">Walking</option>
                 <option value="BICYCLING">Bicycling</option>
                 <option value="TRANSIT">Transit</option>
@@ -52,7 +55,8 @@
             </div>
     
         </div>
-        <input type="submit" id="submit" class="submitMap" value="click to start map">
+        
+        <input type="submit" id="submit" class="submitMap" value="Click To Start Map">
 
     </div>
 

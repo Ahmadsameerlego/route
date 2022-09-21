@@ -72,13 +72,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 30px;
+  padding-top: 90px;
 }
 .header_top .logo img{
   width: 250px;
   height: 102px;
   object-fit: cover;
   border-radius: 15px;
+}
+.header_top .logo{
+  margin: auto;
+  display: flex;
+  justify-content: center;
 }
 .header_top .main_links ul{
   list-style: none;
@@ -99,16 +104,22 @@
 .page_content .Welcome_text{
   color: #fff;
   font-size: 35px;
-  width: 70%;
+  text-align: center;
 }
 .Welcome_details{
   color: #fff;
   font-weight: 500;
-  width: 70%;
+  text-align: center;
 }
 .buttons{
   display: flex;
   margin-top: 90px;
+  justify-content: center;
+}
+.buttons button a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
 }
 .buttons .button1{
   border: none;
@@ -130,6 +141,9 @@
   border-radius: 6px;
   background-color: #4d90fe;
   cursor: pointer;  
+}
+.button3{
+  background-color: #0d9895 !important;
 }
 .form{
   position: absolute;
@@ -350,4 +364,14 @@ label{
 }
 #directions-panel{
   margin-left: 20px;
+}
+.mapLogo , .aboutLogo {
+  width: 150px;
+  height: 70px;
+  object-fit: cover;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 12px;
+  margin-bottom: 12px;
 }
