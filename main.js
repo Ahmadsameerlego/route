@@ -65,11 +65,11 @@ function(response, status) {
       summaryPanel.innerHTML += '<b>Route level: ' + routeSegment +
         '</b><br>'; 
         
-      summaryPanel.innerHTML +='from'+ ' :'+route.legs[i].start_address + '<br>'+' to :' 
+      summaryPanel.innerHTML +='From'+ ' :'+route.legs[i].start_address + '<br>'+' To :' 
       
       summaryPanel.innerHTML += route.legs[i].end_address + '<br><br>';
-      summaryPanel.innerHTML += 'distance in miles :' +route.legs[i].distance.text + '<br><br>';
-      summaryPanel.innerHTML += 'time :' +route.legs[i].duration.text + '<br><br><hr>';
+      summaryPanel.innerHTML += 'Distance in miles :' +route.legs[i].distance.text + '<br><br>';
+      summaryPanel.innerHTML += 'Time :' +route.legs[i].duration.text + '<br><br><hr>';
     }
   } else {
     window.alert('Directions request failed due to ' + status);
